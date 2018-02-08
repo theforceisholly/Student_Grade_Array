@@ -199,6 +199,7 @@
             this.btnEnterDetails.TabIndex = 8;
             this.btnEnterDetails.Text = "Enter Details";
             this.btnEnterDetails.UseVisualStyleBackColor = true;
+            this.btnEnterDetails.Click += new System.EventHandler(this.btnEnterDetails_Click);
             // 
             // btnExit
             // 
