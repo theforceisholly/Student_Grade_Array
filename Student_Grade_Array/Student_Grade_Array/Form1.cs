@@ -14,13 +14,13 @@ namespace Student_Grade_Array
     {
         //variables and arrays
         const int arraysize = 30;
-        private static String[] strStudentName = new String[arraySize];
-        private static String[] strStudentNumber = new String[arraySize];
+        private static String[] strStudentName = new String[arraysize];
+        private static String[] strStudentNumber = new String[arraysize];
         private static String[] strGroup = new String[arraysize];
 
-        private static int[] intEnglish = new int[arraySize];
-        private static int[] intMaths = new int[arraySize];
-        private static int[] intScience = new int[arraySize];
+        private static int[] intEnglish = new int[arraysize];
+        private static int[] intMaths = new int[arraysize];
+        private static int[] intScience = new int[arraysize];
 
         private static int intRecordCount = 0;
         private static int intLoopCounter = 0;
