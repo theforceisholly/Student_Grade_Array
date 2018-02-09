@@ -52,19 +52,19 @@
             this.lblGStudentNumber1 = new System.Windows.Forms.Label();
             this.lblStudentMarks1 = new System.Windows.Forms.Label();
             this.lblStudentMarks2 = new System.Windows.Forms.Label();
-            this.lblGStudentName = new System.Windows.Forms.Label();
-            this.lblGStudentNumber = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
+            this.lblNumber = new System.Windows.Forms.Label();
             this.lblGGroup = new System.Windows.Forms.Label();
-            this.lblGEnglish = new System.Windows.Forms.Label();
-            this.lblGMaths = new System.Windows.Forms.Label();
-            this.lblGScience = new System.Windows.Forms.Label();
-            this.txtGStudentNumber1 = new System.Windows.Forms.TextBox();
-            this.txtGStudentName = new System.Windows.Forms.TextBox();
-            this.txtGStudentNumber = new System.Windows.Forms.TextBox();
+            this.lblEnglishMark = new System.Windows.Forms.Label();
+            this.lblMathsMark = new System.Windows.Forms.Label();
+            this.lblScienceMark = new System.Windows.Forms.Label();
+            this.txtSearchNumber = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtNumber = new System.Windows.Forms.TextBox();
             this.txtGGroup = new System.Windows.Forms.TextBox();
-            this.txtGEnglish = new System.Windows.Forms.TextBox();
-            this.txtGMaths = new System.Windows.Forms.TextBox();
-            this.txtGScience = new System.Windows.Forms.TextBox();
+            this.txtEnglishMark = new System.Windows.Forms.TextBox();
+            this.txtMathsMark = new System.Windows.Forms.TextBox();
+            this.txtScienceMark = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.tbStudentGrades.SuspendLayout();
             this.tbStudentDetails.SuspendLayout();
@@ -250,19 +250,19 @@
             // tbGrades
             // 
             this.tbGrades.Controls.Add(this.btnSearch);
-            this.tbGrades.Controls.Add(this.txtGScience);
-            this.tbGrades.Controls.Add(this.txtGMaths);
-            this.tbGrades.Controls.Add(this.txtGEnglish);
+            this.tbGrades.Controls.Add(this.txtScienceMark);
+            this.tbGrades.Controls.Add(this.txtMathsMark);
+            this.tbGrades.Controls.Add(this.txtEnglishMark);
             this.tbGrades.Controls.Add(this.txtGGroup);
-            this.tbGrades.Controls.Add(this.txtGStudentNumber);
-            this.tbGrades.Controls.Add(this.txtGStudentName);
-            this.tbGrades.Controls.Add(this.txtGStudentNumber1);
-            this.tbGrades.Controls.Add(this.lblGScience);
-            this.tbGrades.Controls.Add(this.lblGMaths);
-            this.tbGrades.Controls.Add(this.lblGEnglish);
+            this.tbGrades.Controls.Add(this.txtNumber);
+            this.tbGrades.Controls.Add(this.txtName);
+            this.tbGrades.Controls.Add(this.txtSearchNumber);
+            this.tbGrades.Controls.Add(this.lblScienceMark);
+            this.tbGrades.Controls.Add(this.lblMathsMark);
+            this.tbGrades.Controls.Add(this.lblEnglishMark);
             this.tbGrades.Controls.Add(this.lblGGroup);
-            this.tbGrades.Controls.Add(this.lblGStudentNumber);
-            this.tbGrades.Controls.Add(this.lblGStudentName);
+            this.tbGrades.Controls.Add(this.lblNumber);
+            this.tbGrades.Controls.Add(this.lblName);
             this.tbGrades.Controls.Add(this.lblStudentMarks2);
             this.tbGrades.Controls.Add(this.lblStudentMarks1);
             this.tbGrades.Controls.Add(this.lblGStudentNumber1);
@@ -322,25 +322,25 @@
             this.lblStudentMarks2.TabIndex = 2;
             this.lblStudentMarks2.Text = "Student Marks";
             // 
-            // lblGStudentName
+            // lblName
             // 
-            this.lblGStudentName.AutoSize = true;
-            this.lblGStudentName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGStudentName.Location = new System.Drawing.Point(21, 84);
-            this.lblGStudentName.Name = "lblGStudentName";
-            this.lblGStudentName.Size = new System.Drawing.Size(93, 16);
-            this.lblGStudentName.TabIndex = 3;
-            this.lblGStudentName.Text = "Student Name";
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Location = new System.Drawing.Point(21, 84);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(93, 16);
+            this.lblName.TabIndex = 3;
+            this.lblName.Text = "Student Name";
             // 
-            // lblGStudentNumber
+            // lblNumber
             // 
-            this.lblGStudentNumber.AutoSize = true;
-            this.lblGStudentNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGStudentNumber.Location = new System.Drawing.Point(21, 128);
-            this.lblGStudentNumber.Name = "lblGStudentNumber";
-            this.lblGStudentNumber.Size = new System.Drawing.Size(104, 16);
-            this.lblGStudentNumber.TabIndex = 4;
-            this.lblGStudentNumber.Text = "Student Number";
+            this.lblNumber.AutoSize = true;
+            this.lblNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumber.Location = new System.Drawing.Point(21, 128);
+            this.lblNumber.Name = "lblNumber";
+            this.lblNumber.Size = new System.Drawing.Size(104, 16);
+            this.lblNumber.TabIndex = 4;
+            this.lblNumber.Text = "Student Number";
             // 
             // lblGGroup
             // 
@@ -352,56 +352,56 @@
             this.lblGGroup.TabIndex = 5;
             this.lblGGroup.Text = "Group";
             // 
-            // lblGEnglish
+            // lblEnglishMark
             // 
-            this.lblGEnglish.AutoSize = true;
-            this.lblGEnglish.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGEnglish.Location = new System.Drawing.Point(381, 84);
-            this.lblGEnglish.Name = "lblGEnglish";
-            this.lblGEnglish.Size = new System.Drawing.Size(52, 16);
-            this.lblGEnglish.TabIndex = 6;
-            this.lblGEnglish.Text = "English";
+            this.lblEnglishMark.AutoSize = true;
+            this.lblEnglishMark.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEnglishMark.Location = new System.Drawing.Point(381, 84);
+            this.lblEnglishMark.Name = "lblEnglishMark";
+            this.lblEnglishMark.Size = new System.Drawing.Size(52, 16);
+            this.lblEnglishMark.TabIndex = 6;
+            this.lblEnglishMark.Text = "English";
             // 
-            // lblGMaths
+            // lblMathsMark
             // 
-            this.lblGMaths.AutoSize = true;
-            this.lblGMaths.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGMaths.Location = new System.Drawing.Point(381, 128);
-            this.lblGMaths.Name = "lblGMaths";
-            this.lblGMaths.Size = new System.Drawing.Size(44, 16);
-            this.lblGMaths.TabIndex = 7;
-            this.lblGMaths.Text = "Maths";
+            this.lblMathsMark.AutoSize = true;
+            this.lblMathsMark.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMathsMark.Location = new System.Drawing.Point(381, 128);
+            this.lblMathsMark.Name = "lblMathsMark";
+            this.lblMathsMark.Size = new System.Drawing.Size(44, 16);
+            this.lblMathsMark.TabIndex = 7;
+            this.lblMathsMark.Text = "Maths";
             // 
-            // lblGScience
+            // lblScienceMark
             // 
-            this.lblGScience.AutoSize = true;
-            this.lblGScience.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGScience.Location = new System.Drawing.Point(381, 170);
-            this.lblGScience.Name = "lblGScience";
-            this.lblGScience.Size = new System.Drawing.Size(57, 16);
-            this.lblGScience.TabIndex = 8;
-            this.lblGScience.Text = "Science";
+            this.lblScienceMark.AutoSize = true;
+            this.lblScienceMark.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScienceMark.Location = new System.Drawing.Point(381, 170);
+            this.lblScienceMark.Name = "lblScienceMark";
+            this.lblScienceMark.Size = new System.Drawing.Size(57, 16);
+            this.lblScienceMark.TabIndex = 8;
+            this.lblScienceMark.Text = "Science";
             // 
-            // txtGStudentNumber1
+            // txtSearchNumber
             // 
-            this.txtGStudentNumber1.Location = new System.Drawing.Point(163, 19);
-            this.txtGStudentNumber1.Name = "txtGStudentNumber1";
-            this.txtGStudentNumber1.Size = new System.Drawing.Size(100, 20);
-            this.txtGStudentNumber1.TabIndex = 9;
+            this.txtSearchNumber.Location = new System.Drawing.Point(163, 19);
+            this.txtSearchNumber.Name = "txtSearchNumber";
+            this.txtSearchNumber.Size = new System.Drawing.Size(100, 20);
+            this.txtSearchNumber.TabIndex = 9;
             // 
-            // txtGStudentName
+            // txtName
             // 
-            this.txtGStudentName.Location = new System.Drawing.Point(163, 83);
-            this.txtGStudentName.Name = "txtGStudentName";
-            this.txtGStudentName.Size = new System.Drawing.Size(171, 20);
-            this.txtGStudentName.TabIndex = 10;
+            this.txtName.Location = new System.Drawing.Point(163, 83);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(171, 20);
+            this.txtName.TabIndex = 10;
             // 
-            // txtGStudentNumber
+            // txtNumber
             // 
-            this.txtGStudentNumber.Location = new System.Drawing.Point(163, 127);
-            this.txtGStudentNumber.Name = "txtGStudentNumber";
-            this.txtGStudentNumber.Size = new System.Drawing.Size(100, 20);
-            this.txtGStudentNumber.TabIndex = 11;
+            this.txtNumber.Location = new System.Drawing.Point(163, 127);
+            this.txtNumber.Name = "txtNumber";
+            this.txtNumber.Size = new System.Drawing.Size(100, 20);
+            this.txtNumber.TabIndex = 11;
             // 
             // txtGGroup
             // 
@@ -410,26 +410,26 @@
             this.txtGGroup.Size = new System.Drawing.Size(100, 20);
             this.txtGGroup.TabIndex = 12;
             // 
-            // txtGEnglish
+            // txtEnglishMark
             // 
-            this.txtGEnglish.Location = new System.Drawing.Point(463, 83);
-            this.txtGEnglish.Name = "txtGEnglish";
-            this.txtGEnglish.Size = new System.Drawing.Size(73, 20);
-            this.txtGEnglish.TabIndex = 13;
+            this.txtEnglishMark.Location = new System.Drawing.Point(463, 83);
+            this.txtEnglishMark.Name = "txtEnglishMark";
+            this.txtEnglishMark.Size = new System.Drawing.Size(73, 20);
+            this.txtEnglishMark.TabIndex = 13;
             // 
-            // txtGMaths
+            // txtMathsMark
             // 
-            this.txtGMaths.Location = new System.Drawing.Point(463, 127);
-            this.txtGMaths.Name = "txtGMaths";
-            this.txtGMaths.Size = new System.Drawing.Size(73, 20);
-            this.txtGMaths.TabIndex = 14;
+            this.txtMathsMark.Location = new System.Drawing.Point(463, 127);
+            this.txtMathsMark.Name = "txtMathsMark";
+            this.txtMathsMark.Size = new System.Drawing.Size(73, 20);
+            this.txtMathsMark.TabIndex = 14;
             // 
-            // txtGScience
+            // txtScienceMark
             // 
-            this.txtGScience.Location = new System.Drawing.Point(463, 169);
-            this.txtGScience.Name = "txtGScience";
-            this.txtGScience.Size = new System.Drawing.Size(73, 20);
-            this.txtGScience.TabIndex = 15;
+            this.txtScienceMark.Location = new System.Drawing.Point(463, 169);
+            this.txtScienceMark.Name = "txtScienceMark";
+            this.txtScienceMark.Size = new System.Drawing.Size(73, 20);
+            this.txtScienceMark.TabIndex = 15;
             // 
             // btnSearch
             // 
@@ -439,6 +439,7 @@
             this.btnSearch.TabIndex = 16;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // frmStudentGrades
             // 
@@ -483,22 +484,22 @@
         private System.Windows.Forms.TabPage tbGrades;
         private System.Windows.Forms.TabPage tbResults;
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.Label lblGScience;
-        private System.Windows.Forms.Label lblGMaths;
-        private System.Windows.Forms.Label lblGEnglish;
+        private System.Windows.Forms.Label lblScienceMark;
+        private System.Windows.Forms.Label lblMathsMark;
+        private System.Windows.Forms.Label lblEnglishMark;
         private System.Windows.Forms.Label lblGGroup;
-        private System.Windows.Forms.Label lblGStudentNumber;
-        private System.Windows.Forms.Label lblGStudentName;
+        private System.Windows.Forms.Label lblNumber;
+        private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblStudentMarks2;
         private System.Windows.Forms.Label lblStudentMarks1;
         private System.Windows.Forms.Label lblGStudentNumber1;
-        private System.Windows.Forms.TextBox txtGScience;
-        private System.Windows.Forms.TextBox txtGMaths;
-        private System.Windows.Forms.TextBox txtGEnglish;
+        private System.Windows.Forms.TextBox txtScienceMark;
+        private System.Windows.Forms.TextBox txtMathsMark;
+        private System.Windows.Forms.TextBox txtEnglishMark;
         private System.Windows.Forms.TextBox txtGGroup;
-        private System.Windows.Forms.TextBox txtGStudentNumber;
-        private System.Windows.Forms.TextBox txtGStudentName;
-        private System.Windows.Forms.TextBox txtGStudentNumber1;
+        private System.Windows.Forms.TextBox txtNumber;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtSearchNumber;
         private System.Windows.Forms.Button btnSearch;
     }
 }
