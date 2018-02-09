@@ -66,9 +66,20 @@
             this.txtMathsMark = new System.Windows.Forms.TextBox();
             this.txtScienceMark = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
+            this.gbxResults = new System.Windows.Forms.GroupBox();
+            this.lblStudentDetails = new System.Windows.Forms.Label();
+            this.lblAverageMark = new System.Windows.Forms.Label();
+            this.lblStudentGrade = new System.Windows.Forms.Label();
+            this.txtStudentDetails = new System.Windows.Forms.TextBox();
+            this.txtAverageMark = new System.Windows.Forms.TextBox();
+            this.txtStudentGrade = new System.Windows.Forms.TextBox();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnCalculate = new System.Windows.Forms.Button();
             this.tbStudentGrades.SuspendLayout();
             this.tbStudentDetails.SuspendLayout();
             this.tbGrades.SuspendLayout();
+            this.tbResults.SuspendLayout();
+            this.gbxResults.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblStudentGrades
@@ -276,6 +287,9 @@
             // 
             // tbResults
             // 
+            this.tbResults.Controls.Add(this.btnCalculate);
+            this.tbResults.Controls.Add(this.btnClear);
+            this.tbResults.Controls.Add(this.gbxResults);
             this.tbResults.Location = new System.Drawing.Point(4, 22);
             this.tbResults.Name = "tbResults";
             this.tbResults.Padding = new System.Windows.Forms.Padding(3);
@@ -441,6 +455,91 @@
             this.btnSearch.UseVisualStyleBackColor = true;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
+            // gbxResults
+            // 
+            this.gbxResults.Controls.Add(this.txtStudentGrade);
+            this.gbxResults.Controls.Add(this.txtAverageMark);
+            this.gbxResults.Controls.Add(this.txtStudentDetails);
+            this.gbxResults.Controls.Add(this.lblStudentGrade);
+            this.gbxResults.Controls.Add(this.lblAverageMark);
+            this.gbxResults.Controls.Add(this.lblStudentDetails);
+            this.gbxResults.Location = new System.Drawing.Point(7, 7);
+            this.gbxResults.Name = "gbxResults";
+            this.gbxResults.Size = new System.Drawing.Size(555, 163);
+            this.gbxResults.TabIndex = 0;
+            this.gbxResults.TabStop = false;
+            this.gbxResults.Text = "Results";
+            // 
+            // lblStudentDetails
+            // 
+            this.lblStudentDetails.AutoSize = true;
+            this.lblStudentDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStudentDetails.Location = new System.Drawing.Point(17, 33);
+            this.lblStudentDetails.Name = "lblStudentDetails";
+            this.lblStudentDetails.Size = new System.Drawing.Size(98, 16);
+            this.lblStudentDetails.TabIndex = 0;
+            this.lblStudentDetails.Text = "Student Details";
+            // 
+            // lblAverageMark
+            // 
+            this.lblAverageMark.AutoSize = true;
+            this.lblAverageMark.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAverageMark.Location = new System.Drawing.Point(17, 71);
+            this.lblAverageMark.Name = "lblAverageMark";
+            this.lblAverageMark.Size = new System.Drawing.Size(93, 16);
+            this.lblAverageMark.TabIndex = 1;
+            this.lblAverageMark.Text = "Average Mark";
+            // 
+            // lblStudentGrade
+            // 
+            this.lblStudentGrade.AutoSize = true;
+            this.lblStudentGrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStudentGrade.Location = new System.Drawing.Point(16, 111);
+            this.lblStudentGrade.Name = "lblStudentGrade";
+            this.lblStudentGrade.Size = new System.Drawing.Size(94, 16);
+            this.lblStudentGrade.TabIndex = 2;
+            this.lblStudentGrade.Text = "Student Grade";
+            // 
+            // txtStudentDetails
+            // 
+            this.txtStudentDetails.Location = new System.Drawing.Point(141, 32);
+            this.txtStudentDetails.Name = "txtStudentDetails";
+            this.txtStudentDetails.Size = new System.Drawing.Size(385, 20);
+            this.txtStudentDetails.TabIndex = 3;
+            // 
+            // txtAverageMark
+            // 
+            this.txtAverageMark.Location = new System.Drawing.Point(141, 70);
+            this.txtAverageMark.Name = "txtAverageMark";
+            this.txtAverageMark.Size = new System.Drawing.Size(100, 20);
+            this.txtAverageMark.TabIndex = 4;
+            // 
+            // txtStudentGrade
+            // 
+            this.txtStudentGrade.Location = new System.Drawing.Point(141, 110);
+            this.txtStudentGrade.Name = "txtStudentGrade";
+            this.txtStudentGrade.Size = new System.Drawing.Size(100, 20);
+            this.txtStudentGrade.TabIndex = 5;
+            // 
+            // btnClear
+            // 
+            this.btnClear.Location = new System.Drawing.Point(358, 200);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(99, 32);
+            this.btnClear.TabIndex = 1;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            // 
+            // btnCalculate
+            // 
+            this.btnCalculate.Location = new System.Drawing.Point(463, 200);
+            this.btnCalculate.Name = "btnCalculate";
+            this.btnCalculate.Size = new System.Drawing.Size(99, 32);
+            this.btnCalculate.TabIndex = 2;
+            this.btnCalculate.Text = "Calculate";
+            this.btnCalculate.UseVisualStyleBackColor = true;
+            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
+            // 
             // frmStudentGrades
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -456,6 +555,9 @@
             this.tbStudentDetails.PerformLayout();
             this.tbGrades.ResumeLayout(false);
             this.tbGrades.PerformLayout();
+            this.tbResults.ResumeLayout(false);
+            this.gbxResults.ResumeLayout(false);
+            this.gbxResults.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -501,6 +603,15 @@
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.TextBox txtSearchNumber;
         private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.GroupBox gbxResults;
+        private System.Windows.Forms.TextBox txtStudentGrade;
+        private System.Windows.Forms.TextBox txtAverageMark;
+        private System.Windows.Forms.TextBox txtStudentDetails;
+        private System.Windows.Forms.Label lblStudentGrade;
+        private System.Windows.Forms.Label lblAverageMark;
+        private System.Windows.Forms.Label lblStudentDetails;
+        private System.Windows.Forms.Button btnCalculate;
+        private System.Windows.Forms.Button btnClear;
     }
 }
 

@@ -122,5 +122,57 @@ namespace Student_Grade_Array
 
             MessageBox.Show("No match found");
         }
+
+        private void btnCalculate_Click(object sender, EventArgs e)
+        {
+            //calculate average mark
+            intLoopCounter = intRecordCount - 1;
+            fAverage = AverageMark(intEnglish[intRecord], intMaths[intRecord], intScience[intRecord);
+
+            //calculate average mark
+            strGrade = CalculateGrade(fAverage);
+
+            //display result details
+            DisplayDetails();
+        }
+
+        //function to calculate average mark
+        public float AverageMark( int intNumber1, int intNumber2, int intNumber3)
+        {
+            float Average = (float)(intNumber1 + intNumber2 + intNumber3) / 3;
+            return Average;
+        }
+
+        //function to enter student details
+        public string CalculateGrade(float Mark)
+        {
+            string strFinalGrade = "";
+            if (Mark >= 80)
+            {
+                strFinalGrade = "You achieved a Distinction";
+            }
+            else if (Mark >= 60)
+            {
+                strFinalGrade = "You achieved a Merit";
+            }
+            else if (Mark >= 40)
+            {
+                strFinalGrade = "You achieved a Pass";
+            }
+            else
+            {
+                strFinalGrade = "You must take a resit";
+            }
+
+            return strFinalGrade;
+        }
+
+        //procedure to enter student details
+        public void DisplayDetails()
+        {
+            lblStudentDetails.Text = strGroup[intLoopCounter] + ":   " + strStudentNumber[intRecord] + ":   " + strStudentName[intRecord];
+            lblAverageMark.Text = fAverage.ToString("#0.00");
+            lblStudentGrade.Text = strGrade;
+        }
     }
 }
