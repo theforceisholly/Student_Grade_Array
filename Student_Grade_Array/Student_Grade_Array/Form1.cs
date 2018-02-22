@@ -115,7 +115,7 @@ namespace Student_Grade_Array
                     txtScienceMark.Text = "" + intScience[intLoopCounter];
 
                     //add additinal code to display all values
-                    intRecord = intLoopCounter;
+                    intRecordCount = intLoopCounter;
                     return;
                 }
             }
@@ -127,7 +127,7 @@ namespace Student_Grade_Array
         {
             //calculate average mark
             intLoopCounter = intRecordCount - 1;
-            fAverage = AverageMark(intEnglish[intRecord], intMaths[intRecord], intScience[intRecord);
+            fAverage = AverageMark(intEnglish[intRecordCount], intMaths[intRecordCount], intScience[intRecordCount]);
 
             //calculate average mark
             strGrade = CalculateGrade(fAverage);
@@ -170,7 +170,7 @@ namespace Student_Grade_Array
         //procedure to enter student details
         public void DisplayDetails()
         {
-            lblStudentDetails.Text = strGroup[intLoopCounter] + ":   " + strStudentNumber[intRecord] + ":   " + strStudentName[intRecord];
+            lblStudentDetails.Text = strGroup[intLoopCounter] + ":   " + strStudentNumber[intRecordCount] + ":   " + strStudentName[intRecordCount];
             lblAverageMark.Text = fAverage.ToString("#0.00");
             lblStudentGrade.Text = strGrade;
         }
